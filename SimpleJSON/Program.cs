@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,7 +29,17 @@ namespace SimpleJSON
                 SW.Flush();
                 SW.Close();
 
-                Console.Write(sJson);
+                Console.WriteLine(sJson);
+                Console.WriteLine();
+
+                Producto PJ = (Producto)JsonConvert.DeserializeObject<Producto>(sJson);
+                Console.WriteLine("Nombre: {0}", PJ.Nombre);
+                Console.WriteLine("Cantidad: {0}", PJ.Cantidad);
+                Console.WriteLine("Precio: {0}", PJ.Precio);
+                foreach (String sTamaño in P.Tamaño)
+                {
+                    Console.WriteLine("Tamaño: {0}", sTamaño);
+                }
             }
             else
             {
