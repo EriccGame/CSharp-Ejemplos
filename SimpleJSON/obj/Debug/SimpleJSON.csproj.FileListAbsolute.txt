@@ -1,0 +1,6 @@
+c:\users\ericc.gaxiola\documents\visual studio 2012\Projects\SimpleJSON\bin\Debug\SimpleJSON.exe
+c:\users\ericc.gaxiola\documents\visual studio 2012\Projects\SimpleJSON\bin\Debug\SimpleJSON.pdb
+c:\users\ericc.gaxiola\documents\visual studio 2012\Projects\SimpleJSON\bin\Debug\Newtonsoft.Json.dll
+c:\users\ericc.gaxiola\documents\visual studio 2012\Projects\SimpleJSON\bin\Debug\Newtonsoft.Json.xml
+c:\users\ericc.gaxiola\documents\visual studio 2012\Projects\SimpleJSON\obj\Debug\SimpleJSON.exe
+c:\users\ericc.gaxiola\documents\visual studio 2012\Projects\SimpleJSON\obj\Debug\SimpleJSON.pdb
