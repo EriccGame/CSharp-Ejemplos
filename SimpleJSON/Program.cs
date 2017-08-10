@@ -19,14 +19,47 @@ namespace SimpleJSON
 
             String sJson = JsonConvert.SerializeObject(P, Formatting.Indented);
 
-            FileStream FS = new FileStream(@"C:\Example\JsonFile.json", FileMode.OpenOrCreate);
-            StreamWriter SW = new StreamWriter(FS, Encoding.UTF8);
-            SW.Write(sJson);
-            SW.Flush();
-            SW.Close();
+            String sPath = Path();
 
-            Console.Write(sJson);
+            if (sPath.Trim().Length > 0)
+            {
+                FileStream FS = new FileStream(Path() + "ArchivoJSON.json", FileMode.OpenOrCreate);
+                StreamWriter SW = new StreamWriter(FS, Encoding.UTF8);
+                SW.Write(sJson);
+                SW.Flush();
+                SW.Close();
+
+                Console.Write(sJson);
+            }
+            else
+            {
+                Console.Write("No se pudo crear el archivo JSON");
+            }
             Console.ReadKey();
+        }
+
+        static String Path()
+        {
+            String sPath = @"C:\Ejemplo\";
+
+            try
+            {
+                if (!Directory.Exists(sPath))
+                {
+                    DirectoryInfo DI = Directory.CreateDirectory(sPath);
+                    Console.WriteLine("Se ha creado la direccion con la fecha: {0}.", Directory.GetCreationTime(sPath));
+                    return sPath;
+                }
+                else
+                {
+                    return sPath;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error en el proceso: {0}", e.ToString());
+                return "";
+            } 
         }
     }
 }
