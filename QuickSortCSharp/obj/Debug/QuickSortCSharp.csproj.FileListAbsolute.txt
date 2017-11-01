@@ -1,0 +1,5 @@
+C:\Proyectos\QuickSortCSharp\bin\Debug\QuickSortCSharp.exe
+C:\Proyectos\QuickSortCSharp\bin\Debug\QuickSortCSharp.pdb
+C:\Proyectos\QuickSortCSharp\obj\Debug\QuickSortCSharp.csprojResolveAssemblyReference.cache
+C:\Proyectos\QuickSortCSharp\obj\Debug\QuickSortCSharp.exe
+C:\Proyectos\QuickSortCSharp\obj\Debug\QuickSortCSharp.pdb
